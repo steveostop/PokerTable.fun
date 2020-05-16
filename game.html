@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayPoker.fun</title>
+</head>
+<body>
+    <div class="table-background-container">
+        <div class="table-background"></div>
+    </div>
+    <div class="info-bar">
+        <div class="menu-dropdown">
+            <span>&#9776</span>
+            <div class="menu-content">
+                <div id="menu-item-settings" class="menu-items">settings</div>
+                <div id="menu-item-help" class="menu-items">help</div>
+            </div>
+        </div>
+        <div class="info-title">
+            <span>Game Title</span>
+        </div>
+        <div class="info-blinds">
+            <span>Curr Blinds</span>
+            <span>Next Blinds</span>
+        </div>
+    </div>
+    <div class="table">
+        <div id="grid-5" class="grid">
+            <div id="player-5" class="players">
+                <div id="player-5-hole-cards" class="hole-cards">
+                    <div id="player-5-card1" class="hidden">
+                        <div id="p5c1-top" class="hc-top"></div>
+                        <div id="p5c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-5-card2" class="hidden">
+                        <div id="p5c2-top" class="hc-top"></div>
+                        <div id="p5c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-5-bio" class="players-bio">
+                    <div id="player-5-image" class="players-image"></div>
+                    <div id="player-5-name" class="players-name">5</div>
+                    <div id="player-5-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="grid-6" class="grid grid-center-top">
+            <div id="player-6" class="players">
+                <div id="player-6-hole-cards" class="hole-cards">
+                    <div id="player-6-card1" class="hidden">
+                        <div id="p6c1-top" class="hc-top"></div>
+                        <div id="p6c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-6-card2" class="hidden">
+                        <div id="p6c2-top" class="hc-top"></div>
+                        <div id="p6c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-6-bio" class="players-bio">
+                    <div id="player-6-image" class="players-image"></div>
+                    <div id="player-6-name" class="players-name">6</div>
+                    <div id="player-6-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-7" class="grid grid-center-top">
+            <div id="player-7" class="players">
+                <div id="player-7-hole-cards" class="hole-cards">
+                    <div id="player-7-card1" class="hidden">
+                        <div id="p7c1-top" class="hc-top"></div>
+                        <div id="p7c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-7-card2" class="hidden">
+                        <div id="p7c2-top" class="hc-top"></div>
+                        <div id="p7c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-7-bio" class="players-bio">
+                    <div id="player-7-image" class="players-image"></div>
+                    <div id="player-7-name" class="players-name">7</div>
+                    <div id="player-7-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-8" class="grid">
+            <div id="player-8" class="players">
+                <div id="player-8-hole-cards" class="hole-cards">
+                    <div id="player-8-card1" class="hidden">
+                        <div id="p8c1-top" class="hc-top"></div>
+                        <div id="p8c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-8-card2" class="hidden">
+                        <div id="p8c2-top" class="hc-top"></div>
+                        <div id="p8c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-8-bio" class="players-bio">
+                    <div id="player-8-image" class="players-image"></div>
+                    <div id="player-8-name" class="players-name">8</div>
+                    <div id="player-8-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-4" class="grid grid-center-items">
+            <div id="player-4" class="players">
+                <div id="player-4-hole-cards" class="hole-cards">
+                    <div id="player-4-card1" class="hidden">
+                        <div id="p4c1-top" class="hc-top"></div>
+                        <div id="p4c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-4-card2" class="hidden">
+                        <div id="p4c2-top" class="hc-top"></div>
+                        <div id="p4c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-4-bio" class="players-bio">
+                    <div id="player-4-image" class="players-image"></div>
+                    <div id="player-4-name" class="players-name">4</div>
+                    <div id="player-4-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="table-center" class="grid">
+            <div id="community-cards">
+                <div id="flop-card1" class="hidden">
+                    <div id="fc1-top" class="cc-top"></div>
+                    <div id="fc1-bottom" class="cc-bottom"></div>
+                </div>
+                <div id="flop-card2" class="hidden">
+                    <div id="fc2-top" class="cc-top"></div>
+                    <div id="fc2-bottom" class="cc-bottom"></div>
+                </div>
+                <div id="flop-card3" class="hidden">
+                    <div id="fc3-top" class="cc-top"></div>
+                    <div id="fc3-bottom" class="cc-bottom"></div>
+                </div>
+                <div id="turn-card" class="hidden">
+                    <div id="tc-top" class="cc-top"></div>
+                    <div id="tc-bottom" class="cc-bottom"></div>
+                </div>
+                <div id="river-card" class="hidden">
+                    <div id="rc-top" class="cc-top"></div>
+                    <div id="rc-bottom" class="cc-bottom"></div>
+                </div>
+            </div>
+            <div id="pot-text">Pot: $100.00</div>
+        </div>
+        
+        <div id="grid-9" class="grid grid-center-items">
+            <div id="player-9" class="players">
+                <div id="player-9-hole-cards" class="hole-cards">
+                    <div id="player-9-card1" class="hidden">
+                        <div id="p9c1-top" class="hc-top"></div>
+                        <div id="p9c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-9-card2" class="hidden">
+                        <div id="p9c2-top" class="hc-top"></div>
+                        <div id="p9c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-9-bio" class="players-bio">
+                    <div id="player-9-image" class="players-image"></div>
+                    <div id="player-9-name" class="players-name">9</div>
+                    <div id="player-9-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-3" class="grid">
+            <div id="player-3" class="players">
+                <div id="player-3-hole-cards" class="hole-cards">
+                    <div id="player-3-card1" class="hidden">
+                        <div id="p3c1-top" class="hc-top"></div>
+                        <div id="p3c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-3-card2" class="hidden">
+                        <div id="p3c2-top" class="hc-top"></div>
+                        <div id="p3c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-3-bio" class="players-bio">
+                    <div id="player-3-image" class="players-image"></div>
+                    <div id="player-3-name" class="players-name">3</div>
+                    <div id="player-3-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-2" class="grid grid-center-bottom">
+            <div id="player-2" class="players">
+                <div id="player-2-hole-cards" class="hole-cards">
+                    <div id="player-2-card1" class="hidden">
+                        <div id="p2c1-top" class="hc-top"></div>
+                        <div id="p2c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-2-card2" class="hidden">
+                        <div id="p2c2-top" class="hc-top"></div>
+                        <div id="p2c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-2-bio" class="players-bio">
+                    <div id="player-2-image" class="players-image"></div>
+                    <div id="player-2-name" class="players-name">2</div>
+                    <div id="player-2-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-1" class="grid grid-center-bottom">
+            <div id="player-1" class="players">
+                <div id="player-1-hole-cards" class="hole-cards">
+                    <div id="player-1-card1" class="hidden">
+                        <div id="p1c1-top" class="hc-top"></div>
+                        <div id="p1c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-1-card2" class="hidden">
+                        <div id="p1c2-top" class="hc-top"></div>
+                        <div id="p1c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-1-bio" class="players-bio">
+                    <div id="player-1-image" class="players-image"></div>
+                    <div id="player-1-name" class="players-name">1</div>
+                    <div id="player-1-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-10" class="grid">
+            <div id="player-10" class="players">
+                <div id="player-10-hole-cards" class="hole-cards">
+                    <div id="player-10-card1" class="hidden">
+                        <div id="p10c1-top" class="hc-top"></div>
+                        <div id="p10c1-bottom" class="hc-bottom"></div>
+                    </div>
+                    <div id="player-10-card2" class="hidden">
+                        <div id="p10c2-top" class="hc-top"></div>
+                        <div id="p10c2-bottom" class="hc-bottom"></div>
+                    </div>
+                </div>
+                <div id="player-10-bio" class="players-bio">
+                    <div id="player-10-image" class="players-image"></div>
+                    <div id="player-10-name" class="players-name">10</div>
+                    <div id="player-10-chips" class="players-chips">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action-bar">
+        <div class="action-bar-left">
+            <form name="chat" class="chat-form" action="" onsubmit="sendChat(); return false">
+                <div id="chat-window">
+                    <ul id="chat-messages"></ul>
+                </div>
+                <input type="text" autocomplete="off" name="input" class="chat-input">
+            </form>
+        </div>
+        <div class="action-bar-right">
+            <div class="deal-test" id="btn-start-game">Start Game</div>
+        </div>
+    </div>
+
+    <div class="form-settings-div" id="div-settings">
+        <form action="" class="form-settings" onsubmit="saveSettings(); return false">
+            <h1>Settings</h1>
+        
+            <label for="name"><b>Name</b></label>
+            <input type="text" autocomplete="off" name="name" id="settings-name">
+        
+            <button class="btn" onclick="saveSettings(); return false">Save</button>
+            <button class="btn cancel" onclick="closeSettings(); return false">Cancel</button>
+        </form>
+    </div>
+
+    <script src="../cards.js"></script>
+    <script src="../socket.io.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
